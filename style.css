@@ -1,0 +1,278 @@
+*{
+    margin:0;
+    padding:0
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background:gainsboro;
+    overflow-x: hidden;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#btn-1{
+    color:white;
+    padding: 5px 10px;
+}
+
+#btn-1:hover{
+    border-bottom: 3px darkred solid;
+    transition: all 0.2s ease-in-out;
+}
+
+#btn-2{
+    color:white;
+}
+
+#btn-2:hover{
+    color:darkred;
+    transition: all 0.2s ease-in-out;
+}
+
+#btn-3{
+    padding:15px 20px;
+    background:darkred;
+    color:white;
+}
+
+#btn-3:hover{
+    color:darkred;
+    background:black;
+    transition:all 0.2s ease-in-out;
+}
+
+#btn-4{
+    color:black;
+}
+
+#btn-4:hover{
+    color: darkred;
+    transition:all 0.2s ease-in-out;
+}
+
+span{
+    color:darkred;
+}
+
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    width:100%;
+    color:white;
+}
+
+.blog-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height:100%;
+    width:100%;
+    color:white;
+}
+
+.title-container{
+    background:white;
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    height:70vh;
+    width:700px;
+    padding: 0 100px;
+}
+
+.content-container{
+    color:black;
+    background:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    width:700px;
+    padding: 0px 100px;
+}
+
+.content-container img{
+    width:100%;
+    padding: 100px 0;
+}
+
+.content{
+    font-family: 'Oswald', sans-serif;
+    padding:0 70px;
+}
+
+.content p{
+    font-size: 20px;
+}
+
+
+.video-container{
+   height:80vh;
+   transition: all 1s ease-in-out;
+}
+
+.video-container .intro-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:70vh;
+}
+
+.showcase{
+    padding: 0 20px;
+}
+
+.video-container .intro-container h1{
+    color:white;
+    font-size: 60px;
+    padding:20px 0;
+}
+
+.video-container .intro-container a{
+    font-size: 20px;
+    background:darkred;
+    color:white;
+    padding: 10px 20px;
+}
+
+.header{
+
+    background: black;
+    color:white;
+    width: 100%;
+    height: 65px;
+}
+
+.header h1{
+    font-size: 45px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.list-container{
+    font-size:20px;
+    display:flex;
+    align-items: center;
+    height:100%;
+    width:100%;
+}
+
+#title{
+    font-size:50px;
+    color:white;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#blog-title{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:80px;
+    color:black;
+    font-family: 'Bebas Neue', cursive;
+    padding:0 50px;
+}
+
+.garnish{
+    height:3px;
+    width:60px;
+    background: darkred;
+    margin-left: 50px;
+}
+
+.header .list-container ul{
+    padding: 0 20px;
+    display:grid;
+    width:100%;
+    grid-template-columns: 6fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.header .list-container ul li{
+    font-weight: bold;
+}
+
+.posts{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    padding: 20px 0;
+}
+
+
+.posts .post-container{
+    padding:70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+#post{
+    background:white;
+    width:45%;
+    height:500px;
+    margin:0 50px;
+    padding:20px;
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.4);
+}
+
+#category{
+    font-size: 14px;
+    color:lightslategray;
+    padding:10px 0;
+}
+
+#title-category{
+    font-size: 14px;
+    color:lightslategray;
+    padding:30px 50px;
+}
+
+#post-title{
+    font-size: 30px;
+}
+
+#post img{
+    width:100%;
+}
+
+
+
+.footer-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    background:black;
+    width:100%;
+    height:500px;
+}
+
+.footer-section{
+    display:flex;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+    color:white;
+}
+
+.footer-section ul{
+    list-style: none;
+}
+
+.footer-section ul li{
+    padding:20px 0;
+    font-size: 15px;
+}
