@@ -110,6 +110,54 @@ span{
     font-weight: bold;
 }
 
+@media (min-width:500px) and (max-width:650px){
+    .desktop{
+        font-size:15px;
+    }
+    #title{
+        font-size: 30px;
+    }
+
+    .header .list-container ul{
+        display:grid;
+        grid-template-rows: 1fr;
+    }
+
+    .header{
+
+        background: black;
+        color:white;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media (max-width:499px) {
+    .desktop{
+        display:none;
+    }
+    
+    #title{
+        font-size: 30px;
+    }
+
+    .header .list-container ul{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+    }
+
+    .header{
+
+        background: black;
+        color:white;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
 .page-container{
     align-items: center;
     justify-content: center;
@@ -196,6 +244,53 @@ span{
     padding:5px 0;
 }
 
+@media (max-width: 650px) {
+    .contact-container{
+        flex-direction: column-reverse;
+        width:80%;
+        padding:20px
+    }
+
+    .info{
+        padding:10px 0;
+    }
+    
+    #contact_form{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height:100%;
+        overflow: none;
+    }
+
+    .contact-container #contact_form .message{
+        width:300px;
+        padding:0;
+        margin:0;
+    }
+
+    #form-btn{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 25px;
+        border:none;
+        padding:0px;
+        border-radius: 20px;
+        color:linen;
+        background: darkred;
+    }
+    
+    
+    
+    .contact-container #contact_form h1{
+        font-size: 50px;
+    }
+    
+    
+    .input{
+        padding:5px 0;
+    }
+}
+
 
 .footer-container{
     display:grid;
@@ -221,4 +316,13 @@ span{
 .footer-section ul li{
     padding:20px 0;
     font-size: 15px;
+}
+
+@media (max-width:1000px){
+    .footer-container{
+        display:flex;
+        flex-direction: column;
+        height:100%;
+        padding:20px 0;
+    }
 }
