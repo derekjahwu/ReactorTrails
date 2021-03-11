@@ -71,7 +71,6 @@ span{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     height:100%;
     width:100%;
     color:white;
@@ -114,44 +113,6 @@ span{
     font-size: 20px;
 }
 
-
-.video-container{
-   height:80vh;
-   transition: all 1s ease-in-out;
-}
-
-.video-container .intro-container{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height:70vh;
-}
-
-.showcase{
-    padding: 0 20px;
-}
-
-.video-container .intro-container h1{
-    color:white;
-    font-size: 60px;
-    padding:20px 0;
-}
-
-.video-container .intro-container a{
-    font-size: 20px;
-    background:darkred;
-    color:white;
-    padding: 10px 20px;
-}
-
-@media (max-width:768px){
-    .video-container .intro-container h1{
-        font-size: 30px;
-    }
-    
-}
-
 .header{
 
     background: black;
@@ -165,19 +126,6 @@ span{
     font-family: 'Bebas Neue', cursive;
 }
 
-.list-container{
-    font-size:20px;
-    display:flex;
-    align-items: center;
-    height:100%;
-    width:100%;
-}
-
-#title{
-    font-size:50px;
-    color:white;
-    font-family: 'Bebas Neue', cursive;
-}
 
 #blog-title{
     display:flex;
@@ -187,6 +135,36 @@ span{
     color:black;
     font-family: 'Bebas Neue', cursive;
     padding:0 50px;
+}
+
+@media (min-width:501px) and (max-width:1000px){
+
+    #blog-title{
+       font-size: 50px;
+    }
+}
+
+@media (max-width:500px){
+    .title-container{
+        width:100%;
+        padding:0;
+    }
+
+    .content-container{
+        height:100%;
+        width:100%;
+        padding:0;
+    }
+    
+
+    #blog-title{
+       font-size: 40px;
+    }
+
+    .content-container img{
+        width:100%;
+        padding: 50px 0;
+    }
 }
 
 .garnish{
@@ -227,141 +205,7 @@ span{
     font-weight: bold;
 }
 
-.posts{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width:100%;
-    padding: 20px 0;
-}
 
-
-.post-container{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 50px;
-    padding:20px 0;
-    align-items: center;
-    justify-content: center;
-    color:white;
-}
-
-
-#post{
-    background:white;
-    color:black;
-    justify-content: center;
-    width:400px;
-    height:500px;
-    margin: 20px 0;
-    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.4);
-}
-
-#post .details-container{
-    padding:10px;
-}
-.postTitle-container{
-    height:100%;
-}
-
-.btn-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    height:100%;
-}
-
-#post-description{
-    font-size: 14px;
-    color:lightslategray;
-}
-
-
-#category{
-    font-size: 14px;
-    color:lightslategray;
-    padding:10px 0;
-}
-
-#title-category{
-    font-size: 14px;
-    color:lightslategray;
-    padding:30px 50px;
-}
-
-#post-title{
-    font-size: 25px;
-}
-
-#post img{
-    width:100%;
-}
-
-@media (min-width:501px) and (max-width:1000px){
-    .post-container{
-        display:flex;
-        flex-direction: column;
-        padding:20px 0;
-        align-items: center;
-        justify-content: center;
-        color:white;
-    }
-}
-
-@media (max-width:500px){
-    .post-container{
-        display:flex;
-        flex-direction: column;
-        
-        align-items: center;
-        justify-content: center;
-        color:white;
-    }
-
-    #post{
-        background:white;
-        color:black;
-        justify-content: center;
-        width:80%;
-        height:450px;
-    }
-
-    #post .details-container{
-        padding:10px;
-    }
-    .postTitle-container{
-        height:100%;
-    }
-    
-    .btn-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width:100%;
-        height:100%;
-    }
-    
-    #post-description{
-        font-size: 14px;
-        color:lightslategray;
-    }
-    
-    
-    #category{
-        font-size: 14px;
-        color:lightslategray;
-        padding:5px 0;
-    }
-    
-    #title-category{
-        font-size: 14px;
-        color:lightslategray;
-        padding:30px 50px;
-    }
-    
-}
 
 
 

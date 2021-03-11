@@ -1,6 +1,7 @@
 *{
     margin:0;
-    padding:0
+    padding:0;
+    overflow:none;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -52,10 +53,6 @@ a{
     transition:all 0.2s ease-in-out;
 }
 
-#form-btn{
-    width:80%;
-}
-
 span{
     color:darkred;
 }
@@ -69,16 +66,18 @@ span{
     color:white;
 }
 
+@media (max-width:1000px){
+    .container{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
 .header{
     background: black;
     color:white;
     width: 100%;
     height: 65px;
-}
-
-.header h1{
-    font-size: 45px;
-    font-family: 'Bebas Neue', cursive;
 }
 
 .list-container{
@@ -106,95 +105,126 @@ span{
     justify-content: center;
     list-style: none;
 }
+
+@media (max-width:1000px){
+    .desktop{
+        display:none;
+    }
+
+
+    #title{
+        font-size: 30px;
+    }
+
+    .header .list-container ul{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        width:100%;
+    }
+
+}
+
 .header .list-container ul li{
     font-weight: bold;
 }
 
-.page-container{
-    align-items: center;
-    justify-content: center;
+.archive{
+    padding:50px;
+}
+
+.archive-container{
     display:flex;
+    justify-content: center;
+}
+
+#post{
+    background:white;
+    color:black;
+    justify-content: center;
+    width:400px;
+    height:450px;
+    margin: 20px 0;
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.4);
+}
+
+.post-container{
+    padding:70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
     height:100%;
+}
+
+#post .details-container{
+    padding:10px;
+}
+
+.postTitle-container{
+    height:100%;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+}
+
+#category{
+    font-size: 14px;
+    color:lightslategray;
+    padding: 5px 0;
+}
+
+#post-title{
+    font-size: 25px;
+}
+
+#post-description{
+    font-size: 14px;
+    color:lightslategray;
+}
+
+#post img{
     width:100%;
 }
 
-.contact-container{
-    background:white;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    width:80%;
+@media (min-width:769px) and (max-width:1000px){
+    .archive{
+        padding:50px 0;
+    }
+
+    #post{
+        background:white;
+        color:black;
+        justify-content: center;
+        width:60%;
+        height:500px;
+        margin:0;
+    }
+
+    
 }
 
-.contact-container #contact_info{
-    padding:20px;
+@media (max-width: 768px){
+    .archive{
+        padding:50px 0;
+    }
+
+    #post{
+        background:white;
+        color:black;
+        justify-content: center;
+        width:80%;
+        height:450px;
+        margin:0;
+    }
+
+    
 }
 
-.contact-container #contact_info h1{
-    font-size:50px;
-    color:black;
-    font-family: 'Bebas Neue', cursive;
-}
-
-#contact_info hr{
-    width:50%;
-}
-
-.info{
-    padding:20px 0;
-}
-
-#contact_form{
-    align-items: center;
-    justify-content: center;
-    width:500px;
-    height:400px;
-    overflow: none;
-}
-
-.contact-container #contact_form .message{
-    display:block;
-    font-size: 15px;
-    width:80%;
-    height:90px;
-    padding:10px;
-    background:lightgrey;
-    border:none;
-    border-radius: 10px;
-}
-
-.contact-container #contact_form .field{
-   font-size: 15px;
-   background: lightgray;
-   border-radius: 10px;
-   border:none;
-   display:block;
-   padding:0 10px;
-   width:80%;
-   height:20px;
-}
-
-#form-btn{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 25px;
-    border:none;
-    padding:0px;
-    border-radius: 20px;
-    color:linen;
-    background: darkred;
-}
-
-
-
-.contact-container #contact_form h1{
-    font-size: 50px;
-}
-
-
-.input{
-    padding:5px 0;
-}
 
 
 .footer-container{
@@ -204,6 +234,15 @@ span{
     background:black;
     width:100%;
     height:500px;
+}
+
+@media (max-width:1000px){
+    .footer-container{
+        display:flex;
+        flex-direction: column;
+        height:100%;
+        padding:20px 0;
+    }
 }
 
 .footer-section{
